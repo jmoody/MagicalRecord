@@ -90,11 +90,15 @@
 #endif
         [self setShouldAutoCreateManagedObjectModel:YES];
         [self setShouldAutoCreateDefaultPersistentStoreCoordinator:NO];
+
+      [self setShouldDeleteStoreOnModelMismatch:NO];
+/* never
 #ifdef DEBUG
         [self setShouldDeleteStoreOnModelMismatch:YES];
 #else
         [self setShouldDeleteStoreOnModelMismatch:NO];
 #endif
+ */
     }
 }
 
